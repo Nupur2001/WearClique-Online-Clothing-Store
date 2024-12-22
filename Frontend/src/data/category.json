@@ -1,0 +1,22 @@
+[
+      {
+        "id": 1,
+        "name": "Men's Wear",
+        "description": "Explore a wide range of stylish and comfortable men's clothing, from casual to formal wear.",
+        "image_link": "https://riverisland.scene7.com/is/image/RiverIsland/c20190301_ROSS_BLOG_landscape_DNT"
+      },
+      {
+        "id": 2,
+        "name": "Women's Fashion",
+        "description": "Discover the latest trends and timeless styles in women's clothing for every occasion.",
+        "image_link": "https://www.instyle.com/thmb/MMU9hp8UnV23FTym51Li007VicU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/100421-rachel-green-outfis-08-dd43a04a48b3493b90a5b508e9d8bd5a.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Kids' Clothing",
+        "description": "Fun, comfortable, and playful clothing for children of all ages, from toddlers to teens.",
+        "image_link": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/59a03d177940955.64df36d7a7bfa.jpg"
+      }
+    ]
+  
+  
