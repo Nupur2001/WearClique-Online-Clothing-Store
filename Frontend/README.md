@@ -31,7 +31,7 @@ Follow these steps to set up and run the project locally:
 ### Step 1: Create a New Vite Project
 Create a new Vite project using the following commands:
 ```bash
-npm create vite@latest my-project -- --template react
+npm create vite@latest .
 cd my-project
 ```
 
