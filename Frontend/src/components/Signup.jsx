@@ -17,7 +17,7 @@ function Signup() {
   const [showDropdown, setShowDropdown] = useState(false);
   const [selectedOptions, setSelectedOptions] = useState([]);
   const [authUser, setAuthUser] = useAuth();
-  const navigate = useNavigate(); // Initialize useNavigate
+  const navigate = useNavigate(); 
 
   const handleOptionClick = (option) => {
     if (selectedOptions.includes(option)) {
@@ -34,6 +34,7 @@ function Signup() {
       email: data.email,
       clothes: selectedOptions,
       bio: data.bio,
+      dob:data.dob,
       phone: data.phone,
       password: data.password,
     };
@@ -138,6 +139,19 @@ function Signup() {
               </div>
             </div>
 
+            {/* Date of Birth */}
+            <div className="space-y-2 mb-4">
+              <label htmlFor="dob" className="text-gray-600">Date of Birth</label>
+              <input
+                type="date"
+                id="dob"
+                className="w-full px-3 py-2 border rounded-md outline-none focus:ring-2 focus:ring-blue-500"
+                {...register("dob", { required: "Date of Birth is required" })}
+              />
+              {errors.dob && <span className="text-red-500">{errors.dob.message}</span>}
+            </div>
+
+
             {/* Bio */}
             <div className="mb-4">
               <label className="block text-sm font-medium">Bio</label>
@@ -205,16 +219,16 @@ function Signup() {
             </div>
           </form>
           <div className="mt-4 text-left">
-        <p>
-          Already registered?{" "}
-          <a
-            onClick={() => document.getElementById("my_modal_3").showModal()}
-            className="text-blue-600 cursor-pointer hover:underline"
-          >
-            Login
-          </a>
-        </p>
-      </div>
+            <p>
+              Already registered?{" "}
+              <a
+                onClick={() => document.getElementById("my_modal_3").showModal()}
+                className="text-blue-600 cursor-pointer hover:underline"
+              >
+                Login
+              </a>
+            </p>
+          </div>
         </div>
       </div>
       <Footer />
