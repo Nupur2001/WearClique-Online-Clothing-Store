@@ -1,0 +1,98 @@
+{
+  "products":[
+    {
+      "id": 1,
+      "category": "Men's Wear", 
+      "product_title": "Men's Shirt",
+      "product_short_description": "A stylish men's shirt.",
+      "product_long_description": "This men's shirt is crafted from soft, breathable fabric, ensuring comfort all day long. With its sleek design and tailored fit, it is perfect for both casual and formal occasions. The shirt features a crisp collar, button-down front, and adjustable cuffs for a polished look. Available in a variety of colors and sizes, this shirt is versatile and ideal for any wardrobe.",
+      "product_price": 300,
+      "product_images": [
+        "https://i.pinimg.com/736x/e1/3c/39/e13c390d31d051ad0ff0623d0e7f260b.jpg",
+        "https://i.pinimg.com/736x/22/ea/c8/22eac891090419e1e4cba34ff85192c8.jpg",
+        "https://i.pinimg.com/736x/bd/61/8a/bd618ace5e4c1283aae7e28ae7cd2c5d.jpg"
+      ],
+      "product_available_colors": ["Brown", "White", "Green"],
+      "product_available_sizes": ["S", "M", "L"],
+      "product_available_fits": ["Slim", "Regular"]
+    },
+    {
+      "id": 2,
+      "category": "Men's Wear",
+      "product_title": "Men's Jacket",
+      "product_short_description": "A warm men's jacket for winter.",
+      "product_long_description": "This men's jacket is designed for ultimate warmth and comfort during the colder months. Featuring a thick, insulated lining, it provides protection against wind and cold temperatures. The jacket is designed with a stylish, modern look, making it ideal for both outdoor adventures and everyday wear. The durable outer material ensures that you stay warm without sacrificing style, with several pockets for added functionality.",
+      "product_price": 399,
+      "product_images": [
+        "https://i.pinimg.com/736x/43/17/de/4317de914de46510827a00449aa0a7de.jpg",
+        "https://i.pinimg.com/736x/80/ef/14/80ef14d5dcb884c8c19e76c55e6f1020.jpg",
+        "https://i.pinimg.com/736x/64/0e/61/640e615ce02f1a96d46d0af16e558fdb.jpg"
+      ],
+      "product_available_colors": ["Black", "Brown", "Green"],
+      "product_available_sizes": ["M", "L", "XL"],
+      "product_available_fits": ["Slim", "Regular"]
+    },
+    {
+      "id": 3,
+      "category": "Women's Fashion",
+      "product_title": "Women's Dress",
+      "product_short_description": "A beautiful women's dress.",
+      "product_long_description": "This women's dress is the perfect combination of elegance and comfort. Designed with a flattering silhouette, it fits beautifully, creating an effortlessly chic look. The fabric is soft and breathable, making it ideal for all-day wear. Whether you’re attending a wedding, party, or a casual outing, this dress will turn heads with its stunning design and versatile color options.",
+      "product_price": 3999,
+      "product_images": [
+        "https://i.pinimg.com/736x/03/fc/3d/03fc3d4307565fa53391f14c62671825.jpg",
+        "https://i.pinimg.com/736x/ad/4d/33/ad4d3349228aabb736cc3029cde85fed.jpg"
+      ],
+      "product_available_colors": ["Green", "Red"],
+      "product_available_sizes": ["S", "M", "L"],
+      "product_available_fits": ["Slim", "Regular"]
+    },
+    {
+      "id": 4,
+      "category": "Women's Fashion",
+      "product_title": "Women's Jacket",
+      "product_short_description": "A warm women's jacket for winter.",
+      "product_long_description": "This women's jacket is a must-have addition to your winter wardrobe. Crafted from high-quality materials, it provides both warmth and style. Whether you're heading to work, a weekend getaway, or just running errands, this jacket will keep you cozy while adding a sophisticated touch to your outfit. The classic design features a tailored fit that flatters the figure, while the inner lining ensures maximum comfort. With its versatile color options and durable construction, this jacket is perfect for layering over your favorite sweaters or dresses. Stay chic and protected from the cold with this timeless women's jacket.",
+      "product_price": 5999,
+      "product_images": [
+        "https://i.pinimg.com/736x/b1/c8/ce/b1c8cedb82b86717b7ba5a720c161b24.jpg",
+        "https://i.pinimg.com/474x/b7/7f/f2/b77ff260143b43450ee804049cf45260.jpg"
+      ],
+      "product_available_colors": ["Green", "Black"],
+      "product_available_sizes": ["S", "M", "L"],
+      "product_available_fits": ["Slim", "Regular"]
+    },
+    {
+      "id": 5,
+      "category": "Kids' Clothing",
+      "product_title": "Kids T-shirt",
+      "product_short_description": "A comfortable kids' T-shirt.",
+      "product_long_description": "This kids' T-shirt is made from soft, lightweight fabric that’s perfect for active children. Whether for everyday wear or playtime, the T-shirt is designed for maximum comfort and breathability. The bright, fun colors make it a great addition to any child’s wardrobe, and it’s available in multiple sizes for growing kids. The classic crew neckline and short sleeves ensure a relaxed fit.",
+      "product_price": 1999,
+      "product_images": [
+        "https://i.pinimg.com/736x/cf/ee/dd/cfeedd0510324757422064f5856f5464.jpg",
+        "https://i.pinimg.com/736x/36/18/fc/3618fc6d57e2b69a732176a769f29595.jpg",
+        "https://i.pinimg.com/736x/f1/80/23/f1802365f0fe624637e3d9c9936025b0.jpg"
+      ],
+      "product_available_colors": ["White", "Pink", "Green"],
+      "product_available_sizes": ["S", "M", "L"],
+      "product_available_fits": ["Regular"]
+    },
+    {
+      "id": 6,
+      "category": "Kids' Clothing",
+      "product_title": "Kids Shorts",
+      "product_short_description": "Comfortable shorts for kids.",
+      "product_long_description": "These comfortable kids’ shorts are perfect for warm weather. Made with soft, breathable material, they provide ultimate comfort for playtime, sports, or just lounging. The elastic waistband ensures a perfect fit, while the range of bright colors adds a fun touch. Whether you're heading to the park, beach, or backyard, these shorts are the ideal choice for active kids who love to move.",
+      "product_price": 1499,
+      "product_images": [
+        "https://i.pinimg.com/736x/4d/07/5d/4d075d8f6ba3db81bdebb7e9fe7b701c.jpg",
+        "https://i.pinimg.com/736x/17/1c/12/171c1225885f447915650301955e345e.jpg",
+        "https://i.pinimg.com/736x/98/e3/e9/98e3e93e46cc82b0a60a7da7972af893.jpg"
+      ],
+      "product_available_colors": ["Red", "Blue", "Green"],
+      "product_available_sizes": ["S", "M", "L"],
+      "product_available_fits": ["Regular"]
+    }
+  ]
+}
