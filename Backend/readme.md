@@ -31,6 +31,6 @@ nodemon: Auto-restarts server during development
 Create a .env file in the root directory and add the following:
 Mention port number mongodb connection string/dbname
 
-###5. Running the Server
+## Running the Server
 npm start
 
