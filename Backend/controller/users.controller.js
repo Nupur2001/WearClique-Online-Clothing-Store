@@ -2,29 +2,27 @@ import User from "../models/users.model.js";
 import bcryptjs from "bcryptjs"
 export const signup = async (req, res) => {
     try {
-        const { name, gender, clothes, bio, phone, email, password } = req.body;
+        const { name, gender, clothes, bio, phone, email, password ,dob } = req.body;
 
-        // Check if a user with the same email or phone already exists
         const existingUser = await User.findOne({
-            $or: [{ email }, { phone }, { name }] // Check for existing email or phone
+            $or: [{ email }, { phone }, { name }] 
         });
 
         if (existingUser) {
             return res.status(400).json({ message: "User already exists" });
         }
 
-        // Hash the password before saving
         const hashedPassword = await bcryptjs.hash(password, 10);
 
-        // Create the new user
         const createdUser = new User({
             name,
             email,
             phone,
-            password: hashedPassword, // Store the hashed password
+            password: hashedPassword, 
             gender,
             clothes,
-            bio
+            bio,
+            dob
         });
 
         await createdUser.save();
@@ -49,7 +47,6 @@ export const login = async (req, res) => {
     try {
         const { identifier, password } = req.body;
 
-        // Find the user by name, email, or phone
         const user = await User.findOne({
             $or: [
                 { name: identifier },
@@ -58,18 +55,15 @@ export const login = async (req, res) => {
             ],
         });
 
-        // Check if the user exists
         if (!user) {
             return res.status(400).json({ message: "Invalid username, email, or phone" });
         }
 
-        // Compare the password
         const isMatch = await bcryptjs.compare(password, user.password);
         if (!isMatch) {
             return res.status(400).json({ message: "Invalid password" });
         }
 
-        // Respond with success
         res.status(200).json({
             message: "Login Successful",
             user: {
@@ -84,29 +78,3 @@ export const login = async (req, res) => {
         res.status(500).json({ message: "Internal Server Error" });
     }
 };
-
-
-
-// export const login = async (req, res) => {
-//     try {
-//         const { name, email, password, phone } = req.body
-//         const user = await User.findOne({ name, email, phone });
-//         const isMatch =await bcryptjs.compare(password, user.password)
-//         if (!user || !isMatch) {
-//             return res.status(400).json({ message: "Invalid username,email,phone or password" })
-//         }
-//         else {
-//             res.status(200).json({
-//                 message: "Login Successful", user: {
-//                     _id: user._id,
-//                     name: name,
-//                     email: email,
-//                     phone: phone
-//                 }
-//             })
-//         }
-//     } catch (error) {
-//         console.log("Error"+ error.message)
-//         res.status(500).json({message:"Internal Server Error"})
-//     }
-// }
